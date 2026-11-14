@@ -1,0 +1,249 @@
+{
+  "at": "2026-11-11T18:03:15.537Z",
+  "live": true,
+  "totalAssetsUsd": 3.286067,
+  "results": [
+    {
+      "sym": "AAPLc",
+      "token": "0xb200000000000000000000C2e324d24d7eEcd1fb",
+      "pool": "0xF5FCB9CDAFcE67d50AfEf298F88E709d2B946BA6",
+      "score": 100,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $558332+20",
+        "vol24 $4078880+10",
+        "price dev 0.07%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 354.6015,
+      "poolPrice": 354.86035133596283,
+      "liqUsd": 558331.91
+    },
+    {
+      "sym": "NVDAc",
+      "token": "0xb20000000000000000000078ee7ce2fE4908108C",
+      "pool": "0xF668e21993f0ACd7ab00BB1cFbAeD0df28A3C8EC",
+      "score": 70,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $0+0",
+        "vol24 $0+0",
+        "price dev 0.23%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 176.79955633,
+      "poolPrice": 176.40040973561065,
+      "liqUsd": 0
+    },
+    {
+      "sym": "TSLAc",
+      "token": "0xb2000000000000000000001e800a7f5189430cD0",
+      "pool": "0x7A33000372f3F028f074182CCb9d16cBEEfBF920",
+      "score": 100,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $478734+20",
+        "vol24 $6275185+10",
+        "price dev 0.21%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 393.32085,
+      "poolPrice": 392.51405217954454,
+      "liqUsd": 478733.6
+    },
+    {
+      "sym": "MSFTc",
+      "token": "0xB200000000000000000000Ab99cFa739E253872B",
+      "pool": "0x2740C0faAb738F6e346e545fDE02aEF9B1A01ee7",
+      "score": 70,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $0+0",
+        "vol24 $0+0",
+        "price dev 0.19%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 520.14874999,
+      "poolPrice": 521.1371331631155,
+      "liqUsd": 0
+    },
+    {
+      "sym": "METAc",
+      "token": "0xb2000000000000000000008bC8786B856E61707C",
+      "pool": "0xd072410fa13D242e1d53721Bcf7AF02e3455DC96",
+      "score": 100,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $875362+20",
+        "vol24 $11011597+10",
+        "price dev 0.15%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 643.14725133,
+      "poolPrice": 642.2038009285634,
+      "liqUsd": 875362.33
+    },
+    {
+      "sym": "GOOGLc",
+      "token": "0xb2000000000000000000002D0BA3164cc74f58B7",
+      "pool": "0x16c70F04C3080a127486Cdf5a4C33c066bBF47C3",
+      "score": 70,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $0+0",
+        "vol24 $0+0",
+        "price dev 0.10%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 293.99117776,
+      "poolPrice": 294.27551395472767,
+      "liqUsd": 0
+    },
+    {
+      "sym": "AMZNc",
+      "token": "0xb200000000000000000000d9192b6B456483C2E8",
+      "pool": "0x532e0F46d1e528507FC9454d5847C231f23bDDf6",
+      "score": 100,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $1808494+20",
+        "vol24 $10012152+10",
+        "price dev 0.26%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 266.675,
+      "poolPrice": 265.9943087892345,
+      "liqUsd": 1808494.08
+    },
+    {
+      "sym": "CRCLc",
+      "token": "0xB20000000000000000000019f6E7C675b73C2e4D",
+      "pool": "0x294666AD6a415E8C33Af801225c04079BB4f1133",
+      "score": 70,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $0+0",
+        "vol24 $0+0",
+        "price dev 0.58%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 68.78,
+      "poolPrice": 68.3809074585463,
+      "liqUsd": 0
+    },
+    {
+      "sym": "INTCc",
+      "token": "0xB2000000000000000000004AFF16039bA04bdFBc",
+      "pool": "0x3D384288fA79B51De882B06B617aB7989CcAd4f3",
+      "score": 95,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $216630+20",
+        "vol24 $74945+5",
+        "price dev 0.28%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 63.235,
+      "poolPrice": 63.05531893277127,
+      "liqUsd": 216630.39
+    },
+    {
+      "sym": "MSTRc",
+      "token": "0xb2000000000000000000004884b426556b92883d",
+      "pool": "0x66DCd42E6314B287110922AE36cB2a8bdEECc153",
+      "score": 70,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $0+0",
+        "vol24 $0+0",
+        "price dev 0.15%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 122.82,
+      "poolPrice": 123.00825317597194,
+      "liqUsd": 0
+    },
+    {
+      "sym": "SNDKc",
+      "token": "0xb200000000000000000000397293Cb8cda9a10c5",
+      "pool": "0x2836e062a3fe75943a7F4A552E2365b98E414E75",
+      "score": 100,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $1764127+20",
+        "vol24 $26163810+10",
+        "price dev 0.03%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 1001.660375,
+      "poolPrice": 1001.9915241817102,
+      "liqUsd": 1764126.64
+    },
+    {
+      "sym": "SPCXc",
+      "token": "0xb2000000000000000000007b9fcbd005511aCBd5",
+      "pool": "0x880dB7Dda4407D99508574E680d067D1164B3cFE",
+      "score": 70,
+      "passed": true,
+      "why": [
+        "api-listed+20",
+        "multiplier sane+10",
+        "liq $0+0",
+        "vol24 $0+0",
+        "price dev 0.01%+20",
+        "NAV present+10",
+        "supply>0+10"
+      ],
+      "nav": 142.192,
+      "poolPrice": 142.17805572675246,
+      "liqUsd": 0
+    }
+  ],
+  "actions": [
+    {
+      "type": "BUY",
+      "sym": "MSFTc",
+      "token": "0xB200000000000000000000Ab99cFa739E253872B",
+      "usd": 0.019330133296559637
+    },
+    {
+      "type": "SELL",
+      "sym": "SNDKc",
+      "token": "0xb200000000000000000000397293Cb8cda9a10c5",
+      "usd": 0.023363733199583347
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentinel — AI-Audited B20 Index Vault (Base)</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 960px; margin: 0 auto; padding: 24px; background: #0b0f14; color: #e6edf3; }
+  a { color: #6cb6ff; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; border-bottom: 1px solid #30363d; padding-bottom: 6px; }
+  .sub { color: #8b949e; margin-top: 0; }
+  .cards { display: flex; gap: 12px; flex-wrap: wrap; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 14px 18px; min-width: 160px; }
+  .card .label { color: #8b949e; font-size: 12px; text-transform: uppercase; }
+  .card .value { font-size: 24px; font-weight: 700; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #21262d; font-size: 14px; }
+  th { color: #8b949e; font-size: 12px; text-transform: uppercase; }
+  .pass { color: #3fb950; font-weight: 700; } .fail { color: #f85149; font-weight: 700; }
+  button { background: #238636; color: #fff; border: 0; border-radius: 8px; padding: 10px 16px; font-size: 15px; cursor: pointer; margin-right: 8px; }
+  button.secondary { background: #30363d; }
+  button:disabled { opacity: .5; cursor: default; }
+  input { background: #0d1117; color: #e6edf3; border: 1px solid #30363d; border-radius: 8px; padding: 10px; font-size: 15px; width: 140px; }
+  .note { background: #161b22; border: 1px solid #9e6a03; border-radius: 8px; padding: 12px; font-size: 13px; color: #e3b341; margin-top: 24px; }
+  .mono { font-family: ui-monospace, monospace; font-size: 12px; word-break: break-all; }
+  #status { color: #8b949e; font-size: 13px; margin-top: 8px; }
+  .feed li { margin-bottom: 6px; font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>🛡️ Sentinel — AI-Audited B20 Index Vault</h1>
+<p class="sub">An AI agent audits Coinbase B20 tokenized stocks on Base, publishes pass/fail verdicts on-chain, and invests this vault's USDC only in tokens that pass — equal-weighted. Built for Base Stocks Maxxing Season, Agentic Stock Finance track.</p>
+
+<div class="cards">
+  <div class="card"><div class="label">Vault TVL</div><div class="value" id="tvl">…</div></div>
+  <div class="card"><div class="label">Share price</div><div class="value" id="sharePrice">…</div></div>
+  <div class="card"><div class="label">Holdings (B20)</div><div class="value" id="holdingCount">…</div></div>
+  <div class="card"><div class="label">Agent verdicts</div><div class="value" id="verdictCount">…</div></div>
+</div>
+
+<h2>Deposit / Withdraw</h2>
+<p class="sub">USDC on Base. Min $1, max $100 per deposit, $500 total TVL cap (demo limits). Withdraw anytime — settles in USDC from the vault's balance.</p>
+<button id="connectBtn">Connect wallet</button>
+<span id="walletAddr"></span>
+<div style="margin-top:12px">
+  <input id="amountInput" type="number" min="1" max="100" step="0.01" placeholder="USDC amount">
+  <button id="depositBtn" disabled>Deposit</button>
+  <button id="withdrawBtn" class="secondary" disabled>Withdraw all shares</button>
+</div>
+<p id="status">Loading vault data from Base…</p>
+
+<h2>Holdings</h2>
+<table id="holdingsTable"><thead><tr><th>Token</th><th>Balance</th><th>Value (USD)</th><th>Weight</th><th>Pool</th></tr></thead><tbody><tr><td colspan="5">Loading…</td></tr></tbody></table>
+
+<h2>Agent audit verdicts</h2>
+<table id="auditTable"><thead><tr><th>Token</th><th>Score</th><th>Verdict</th><th>Updated</th><th>Report hash</th></tr></thead><tbody><tr><td colspan="5">Loading…</td></tr></tbody></table>
+
+<h2>Agent activity</h2>
+<ul class="feed" id="activityFeed"><li>Loading…</li></ul>
+
+<h2>Contracts (Base mainnet)</h2>
+<p class="mono" id="contracts">Loading…</p>
+<p class="sub">Agent (burn wallet): <span class="mono" id="agentAddr"></span> · Every number above is read live from Base RPC / on-chain events. <a href="https://basescan.org/address/0x7469E23D2Fc7CDFe0cfAAA0746Da225411ba63c9" target="_blank">Vault on Basescan</a></p>
+
+<div class="note"><strong>Experimental demo — not financial advice.</strong> Tokenized stocks are issued under Regulation S and are not offered to U.S. persons; this demo does not target U.S. users and confers no rights in any underlying company. The vault is capped at $500 TVL. Smart contracts are unaudited; use at your own risk.</div>
+
+<script src="./config.js"></script>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
